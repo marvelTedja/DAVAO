@@ -29,7 +29,8 @@ const Medicine = mongoose.model("Medicine", medicineSchema, "medicines");
 
 async function seed() {
   try {
-    await mongoose.connect(process.env.DB);
+    const DB = process.env.DATABASE.replace("<PASSWORD>", process.env.DATABASE_PASSWORD);
+    await mongoose.connect(DB);
     console.log("Connected to MongoDB");
 
     const existing = await Medicine.countDocuments();
