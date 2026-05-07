@@ -10,7 +10,6 @@ const app = express();
 dotenv.config({ path: "./config.env" });
 
 const PORT = process.env.PORT || 3000;
-const hostname = "127.0.0.1";
 
 async function connectDB() {
   try {
@@ -36,8 +35,8 @@ app.use("/davao", medicineRoutes);
 app.get("/", (req, res) => res.redirect("/davao"));
 
 function startServer() {
-  app.listen(PORT, hostname, () => {
-    console.log(`RGM Davao running at http://${hostname}:${PORT}/davao`);
+  app.listen(PORT, () => {
+    console.log(`RGM Davao running on port ${PORT}`);
   });
 }
 
