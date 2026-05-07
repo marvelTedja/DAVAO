@@ -1,0 +1,501 @@
+[
+  {
+    "name": "Syrup Paracetamol",
+    "brand_name": "KIDICEF / Hyfer-125",
+    "category": "Anti-inflammatory",
+    "form": "Syrup",
+    "indication": "Fever, Pain",
+    "dosage": [
+      { "age_range": "2 months - 6 months", "dose": "2.5 ml" },
+      { "age_range": "7 months - 2 years", "dose": "5 ml" },
+      { "age_range": "3 years - 4 years", "dose": "7.5 ml" },
+      { "age_range": "5 years - 6 years", "dose": "10 ml" },
+      { "age_range": "7 years - 8 years", "dose": "12.5 ml" },
+      { "age_range": "9 years - 10 years", "dose": "15 ml" },
+      { "age_range": "11 years - 12 years", "dose": "½ tablespoon (12.5 ml)" }
+    ],
+    "frequency": "When needed. High fever: every 6 hrs (max 4x per day)",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Tablet Paracetamol",
+    "brand_name": "Parasaph",
+    "category": "Anti-inflammatory",
+    "form": "Tablet",
+    "indication": "Fever, Pain",
+    "dosage": [
+      { "age_range": "Adult", "dose": "2 tablets when needed" }
+    ],
+    "frequency": "When needed. Maximum every 6 hrs (4x per day)",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Phenylpropanolamine + Chlorphenamine + Paracetamol",
+    "brand_name": "Symdex-D",
+    "category": "Stuffy Nose",
+    "form": "Tablet",
+    "indication": "Stuffy nose and Fever",
+    "dosage": [
+      { "age_range": "7 years - 12 years", "dose": "½ tablet" },
+      { "age_range": "≥13 years / Adult", "dose": "1 tablet" }
+    ],
+    "frequency": "Every 8 hrs. As needed / For 2 days",
+    "precautions": [
+      "NOT for pregnant or breastfeeding",
+      "NOT for high blood pressure"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Syrup Phenylpropanolamine",
+    "brand_name": "Dekonrex",
+    "category": "Stuffy Nose",
+    "form": "Syrup",
+    "indication": "Stuffy nose",
+    "dosage": [
+      { "age_range": "2 years - 6 years", "dose": "2.5 ml (½ teaspoon)" },
+      { "age_range": "7 years - 12 years", "dose": "5 ml (1 teaspoon)" },
+      { "age_range": "≥13 years / Adult", "dose": "10 ml (2 teaspoons)" }
+    ],
+    "frequency": "As needed / For 2 days",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Sodium Chloride 0.65% Nasal Drop",
+    "brand_name": "Salinax",
+    "category": "Stuffy Nose",
+    "form": "Nasal Drops",
+    "indication": "Running nose (children under 2 years)",
+    "dosage": [
+      { "age_range": "< 2 years", "dose": "1 nasal drop before feeding then suck out" }
+    ],
+    "frequency": "Before each feeding",
+    "precautions": [],
+    "notes": "Suck out mucus after applying drops"
+  },
+  {
+    "name": "Carbocisteine Capsule",
+    "brand_name": "Marluxyn",
+    "category": "Cough / Pain",
+    "form": "Capsule",
+    "indication": "Chesty cough",
+    "dosage": [
+      { "age_range": "Adult", "dose": "1 capsule" }
+    ],
+    "frequency": "Every 8 hrs with food",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Carbocisteine Syrup",
+    "brand_name": "Ceasol",
+    "category": "Cough / Pain",
+    "form": "Syrup",
+    "indication": "Chesty cough",
+    "dosage": [
+      { "age_range": "2 years - 5 years", "dose": "½ - 1 teaspoon" },
+      { "age_range": "5 years - 12 years", "dose": "1 - 2 teaspoons" }
+    ],
+    "frequency": "3x per day (every 8 hrs)",
+    "precautions": [],
+    "notes": "Contraindicated in glaucoma and scratched cornea"
+  },
+  {
+    "name": "Mefenamic Acid",
+    "brand_name": "Myrefen",
+    "category": "Cough / Pain",
+    "form": "Capsule",
+    "indication": "Pain, Heavy menstrual bleeding",
+    "dosage": [
+      { "age_range": "Adult", "dose": "1 capsule" }
+    ],
+    "frequency": "Every 8 hrs with food for 3 days",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Diclofenac",
+    "brand_name": "Trifocid",
+    "category": "Cough / Pain",
+    "form": "Tablet",
+    "indication": "Pain",
+    "dosage": [
+      { "age_range": "Adult", "dose": "1 tablet" }
+    ],
+    "frequency": "Every 8 hrs with food for 3 days",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Dimenhydrinate",
+    "brand_name": "Novomin",
+    "category": "Nausea / Vomiting",
+    "form": "Tablet",
+    "indication": "Vomiting and Giddiness",
+    "dosage": [
+      { "age_range": "2 years - 6 years", "dose": "¼ - ½ tablet" },
+      { "age_range": "7 years - 12 years", "dose": "½ tablet" },
+      { "age_range": "≥13 years / Adult", "dose": "1 tablet" }
+    ],
+    "frequency": "Every 8 hrs (3x per day)",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Metoclopramide",
+    "brand_name": "Sunward",
+    "category": "Nausea / Vomiting",
+    "form": "Tablet",
+    "indication": "Nausea and Vomiting",
+    "dosage": [
+      { "age_range": "Adult", "dose": "1 tablet" }
+    ],
+    "frequency": "Every 8 hrs for one day",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Loperamide",
+    "brand_name": "Motrex",
+    "category": "Diarrhoea / Vomiting",
+    "form": "Capsule",
+    "indication": "Diarrhoea (Antidiarrhoeal)",
+    "dosage": [
+      { "age_range": "Adult", "dose": "1 capsule after each loose stool" }
+    ],
+    "frequency": "Maximum 4 capsules per day for 2 days",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "ORS (Oral Rehydration Salts)",
+    "brand_name": "Sodium Chloride + Potassium Chloride + Trisodium Citrate + Glucose Anhydrous",
+    "category": "Diarrhoea / Vomiting",
+    "form": "Sachet / Powder",
+    "indication": "Vomiting and Diarrhoea — rehydration",
+    "dosage": [
+      { "age_range": "≤2 months - 6 years", "dose": "Take porridge water and encourage breastfeeding" },
+      { "age_range": "≥7 years / Adult", "dose": "1 sachet in 250 ml of boiled/clean water" }
+    ],
+    "frequency": "After every vomit/diarrhoea episode",
+    "precautions": [],
+    "notes": "Dissolve sachet in 250 ml clean boiled water. Encourage breastfeeding for infants."
+  },
+  {
+    "name": "Aluminium + Magnesium Antacid",
+    "brand_name": "",
+    "category": "Gastric Issues",
+    "form": "Tablet (chewable)",
+    "indication": "Gastritis",
+    "dosage": [
+      { "age_range": "≥12 years / Adult", "dose": "2 tablets — chew thoroughly" }
+    ],
+    "frequency": "4x per day — 20 mins after meals (breakfast, lunch, dinner) + before sleep when needed",
+    "precautions": [],
+    "notes": "Must be chewed, not swallowed whole"
+  },
+  {
+    "name": "Omeprazole",
+    "brand_name": "mL-Gacid",
+    "category": "Gastric Issues",
+    "form": "Capsule",
+    "indication": "Gastritis",
+    "dosage": [
+      { "age_range": "≥2 years / Adult", "dose": "1 capsule once a day" }
+    ],
+    "frequency": "Once daily in the morning on empty stomach (1 hour before breakfast)",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Syrup Dicyclomine",
+    "brand_name": "Diaciel",
+    "category": "Stomach Pain",
+    "form": "Syrup",
+    "indication": "Tummy pain and Tummy cramps",
+    "dosage": [
+      { "age_range": "2 years - 12 years", "dose": "5 ml (1 teaspoon)" },
+      { "age_range": "≥13 years / Adult", "dose": "10 ml (2 teaspoons)" }
+    ],
+    "frequency": "Every 8 hrs for 2 - 3 days",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Cephalexin",
+    "brand_name": "DYNA",
+    "category": "Antibiotics",
+    "form": "Capsule",
+    "indication": "Respiratory/ENT infections, Skin infections, UTI, Bone and Dental infections",
+    "dosage": [
+      { "age_range": ">12 years / Adult", "dose": "2 capsules" }
+    ],
+    "frequency": "Every 12 hrs for 5 days",
+    "precautions": [
+      "MUST finish course even after feeling well",
+      "STOP if diarrhoea occurs"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Doxycycline",
+    "brand_name": "",
+    "category": "Antibiotics",
+    "form": "Tablet / Capsule",
+    "indication": "Epididymo-orchitis, Urethritis, Malaria, Leptospirosis, Rocky Mountain Spotted Fever, Relapsing Fever (louse/tick-borne)",
+    "dosage": [
+      { "age_range": "≥13 years / Adult", "dose": "1 tablet 2x per day" }
+    ],
+    "frequency": "2x per day — duration depends on indication: Epididymo-orchitis: 10 days (+Ciprofloxacin) | Urethritis: 7 days (+Ciprofloxacin) | Malaria: 7 days | Leptospirosis: 7 days | RMSF: 5 days | Relapsing fever: single dose",
+    "precautions": [
+      "MUST finish course even after feeling well",
+      "STOP if diarrhoea occurs"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Suspension Metronidazole",
+    "brand_name": "Amidazol",
+    "category": "Antibiotics",
+    "form": "Suspension",
+    "indication": "Infection of teeth, Tummy infections (Appendix, Giardiasis, Amoebiasis), Gingivitis",
+    "dosage": [
+      { "age_range": "1 month - 2 months", "dose": "2.5 ml (½ teaspoon)" },
+      { "age_range": "3 months - 11 months", "dose": "5 ml (1 teaspoon)" },
+      { "age_range": "1 year - 3 years", "dose": "7.5 ml (1½ teaspoons)" },
+      { "age_range": "4 years - 6 years", "dose": "12.5 ml (2½ teaspoons)" },
+      { "age_range": "≥7 years / Adult", "dose": "15 ml (3 teaspoons)" },
+      { "age_range": "Gingivitis 1-3 years", "dose": "2 ml (50mg) 3x/day" },
+      { "age_range": "Gingivitis 3-7 years", "dose": "4 ml (100mg) 2x/day" },
+      { "age_range": "Gingivitis 7-10 years", "dose": "4 ml (100mg) 3x/day" },
+      { "age_range": "Gingivitis >10 years", "dose": "8 ml 3x/day" }
+    ],
+    "frequency": "Once a day for 5 days (general). Gingivitis: as per dosage.",
+    "precautions": [
+      "MUST finish course even after feeling well",
+      "STOP if diarrhoea occurs"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Ciprofloxacin",
+    "brand_name": "Cyoin",
+    "category": "Antibiotics",
+    "form": "Tablet",
+    "indication": "Bone/Joint infections, Tonsils/Lungs/Skin infections, Infective diarrhoea (dehydrated + feverish), Bladder infection, Kidney infection, Epididymo-orchitis, Intra-abdominal infection",
+    "dosage": [
+      { "age_range": "Adult — Bone/Joint", "dose": "2 tablets 2x/day" },
+      { "age_range": "Adult — Tonsils/Lungs/Skin", "dose": "2 tablets 2x/day for 5 days" },
+      { "age_range": "Adult — Infective diarrhoea", "dose": "2 tablets 2x/day for 8 days" },
+      { "age_range": "Adult — Bladder infection", "dose": "1 tablet 2x/day for 3 days" },
+      { "age_range": "Child ≥3 years — Bladder", "dose": "½ tablet 2x/day" },
+      { "age_range": "Adult — Kidney infection", "dose": "2 tablets 2x/day for 7 days" },
+      { "age_range": "Adult — Epididymo-orchitis", "dose": "2 tablets 2x/day for 10 days (+Doxycycline)" },
+      { "age_range": "Adult — Intra-abdominal", "dose": "2 tablets 2x/day for 5 days" }
+    ],
+    "frequency": "2x per day — duration varies by indication",
+    "precautions": [
+      "MUST finish course even after feeling well",
+      "STOP if diarrhoea occurs"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Suspension Cefaclor",
+    "brand_name": "Soficlor",
+    "category": "Antibiotics",
+    "form": "Suspension",
+    "indication": "Inflamed tonsils, Chest infection, Bladder infection, Cellulitis",
+    "dosage": [
+      { "age_range": "2 months - 11 months", "dose": "1.25 ml" },
+      { "age_range": "1 year - 5 years", "dose": "2.5 ml" },
+      { "age_range": "6 years - 8 years", "dose": "5 ml" },
+      { "age_range": "9 years - 10 years", "dose": "7.5 ml" },
+      { "age_range": "≥12 years", "dose": "10 ml" }
+    ],
+    "frequency": "3x per day for 5 - 7 days",
+    "precautions": [
+      "MUST finish course even after feeling well",
+      "STOP if diarrhoea occurs"
+    ],
+    "notes": "Fill water to 60 ml and shake well before use"
+  },
+  {
+    "name": "Chloramphenicol Eye Ointment",
+    "brand_name": "Kloroxan (CMC)",
+    "category": "Antifungal / Antibacterial",
+    "form": "Eye Ointment",
+    "indication": "Eye bacteria, Abrasion on skin",
+    "dosage": [
+      { "age_range": "≥2 years / Adult", "dose": "Apply as directed" }
+    ],
+    "frequency": "3x per day for 5 days",
+    "precautions": [],
+    "notes": "Can also be used for abrasions on skin"
+  },
+  {
+    "name": "Clotrimazole Skin Cream",
+    "brand_name": "Candasole",
+    "category": "Antifungal / Antibacterial",
+    "form": "Cream",
+    "indication": "Fungal skin infection",
+    "dosage": [
+      { "age_range": "All ages", "dose": "Apply to affected area" }
+    ],
+    "frequency": "2x per day for 2 weeks",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Fucidic Acid",
+    "brand_name": "Germacid",
+    "category": "Antifungal / Antibacterial",
+    "form": "Cream",
+    "indication": "Bacterial skin infection",
+    "dosage": [
+      { "age_range": "All ages", "dose": "Apply to affected area" }
+    ],
+    "frequency": "2x per day for 1 week",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Blumea Balsamifera (Sambong Leaf)",
+    "brand_name": "Unsam",
+    "category": "Antifungal / Antibacterial",
+    "form": "Tablet",
+    "indication": "Leg swelling, Kidney stone",
+    "dosage": [
+      { "age_range": "Adult", "dose": "1 tablet" }
+    ],
+    "frequency": "Every 8 hrs",
+    "precautions": [],
+    "notes": "Herbal / natural medicine"
+  },
+  {
+    "name": "Clotrimazole Ear Drops",
+    "brand_name": "Candid",
+    "category": "Antifungal / Antibacterial",
+    "form": "Ear Drops",
+    "indication": "Fungal ear infection",
+    "dosage": [
+      { "age_range": "All ages", "dose": "3 drops" }
+    ],
+    "frequency": "3x per day for 2 weeks",
+    "precautions": [],
+    "notes": "Lie down sideways for 10 minutes after applying drops"
+  },
+  {
+    "name": "Ofloxacin Ear Drops",
+    "brand_name": "Torimd",
+    "category": "Antifungal / Antibacterial",
+    "form": "Ear Drops",
+    "indication": "Bacterial ear infection",
+    "dosage": [
+      { "age_range": "6 months - 13 years", "dose": "5 drops" },
+      { "age_range": "≥14 years / Adult", "dose": "10 drops" }
+    ],
+    "frequency": "1x per day for 7 days",
+    "precautions": [],
+    "notes": "Lie down sideways for 10 minutes after applying drops"
+  },
+  {
+    "name": "Ciprofloxacin Ear Drop 0.3%",
+    "brand_name": "Celsus",
+    "category": "Antifungal / Antibacterial",
+    "form": "Ear Drops",
+    "indication": "Bacterial ear infection",
+    "dosage": [
+      { "age_range": "≥2 years / Adult", "dose": "3 drops" }
+    ],
+    "frequency": "2x per day for 7 days",
+    "precautions": [],
+    "notes": "Lie down sideways for 10 minutes after applying drops"
+  },
+  {
+    "name": "Cetirizine",
+    "brand_name": "Zetrinx",
+    "category": "Rash / Asthma / Allergy",
+    "form": "Tablet",
+    "indication": "Allergy",
+    "dosage": [
+      { "age_range": "2 years - 6 years", "dose": "½ tablet" },
+      { "age_range": "7 years - 12 years / Adult", "dose": "1 tablet" }
+    ],
+    "frequency": "1x per day",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Prednisolone",
+    "brand_name": "Prednisyn",
+    "category": "Rash / Asthma / Allergy",
+    "form": "Tablet",
+    "indication": "Allergy",
+    "dosage": [
+      { "age_range": "Children (>5 years)", "dose": "3 tablets" },
+      { "age_range": "Adult", "dose": "6 tablets" }
+    ],
+    "frequency": "Once a day with food",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Zinc Oxide + Calamine Ointment",
+    "brand_name": "Calmoseptine / Dermoplex",
+    "category": "Rash / Asthma / Allergy",
+    "form": "Ointment / Cream",
+    "indication": "Rash",
+    "dosage": [
+      { "age_range": "All ages", "dose": "Apply to affected area" }
+    ],
+    "frequency": "3x per day",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Salbutamol",
+    "brand_name": "Asmin",
+    "category": "Rash / Asthma / Allergy",
+    "form": "Tablet",
+    "indication": "Asthma",
+    "dosage": [
+      { "age_range": "2 years - 5 years", "dose": "¼ tablet (2mg)" },
+      { "age_range": "≥6 years", "dose": "½ tablet (2mg)" },
+      { "age_range": "Adult", "dose": "1 tablet (4mg)" }
+    ],
+    "frequency": "3x per day",
+    "precautions": [],
+    "notes": "T.Salbutamol 2mg: 2yo-5yo ½ tab; 6yo-12yo 1 tab at 3x/day for 4mg tablets"
+  },
+  {
+    "name": "Diphenhydramine Capsule",
+    "brand_name": "Histazyn Rx",
+    "category": "Rash / Asthma / Allergy",
+    "form": "Capsule",
+    "indication": "Allergy, Cough, Motion sickness, Insomnia",
+    "dosage": [
+      { "age_range": "Adult", "dose": "1 capsule" }
+    ],
+    "frequency": "3x per day (every 8 hrs)",
+    "precautions": [],
+    "notes": ""
+  },
+  {
+    "name": "Syrup Diphenhydramine",
+    "brand_name": "Benadryl",
+    "category": "Rash / Asthma / Allergy",
+    "form": "Syrup",
+    "indication": "Allergic coughs",
+    "dosage": [
+      { "age_range": "2 years - 6 years", "dose": "2.5 ml (½ teaspoon)" },
+      { "age_range": "7 years - 12 years", "dose": "5 ml (1 teaspoon)" }
+    ],
+    "frequency": "3x per day (every 8 hrs)",
+    "precautions": [],
+    "notes": "12.5mg per 5ml"
+  }
+]

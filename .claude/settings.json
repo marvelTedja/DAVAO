@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"require\\('dotenv'\\).config\\({path:'./config.env'}\\); const DB = process.env.DATABASE.replace\\('<PASSWORD>', process.env.DATABASE_PASSWORD\\); console.log\\('Connection string OK:', DB.replace\\('N4th4n43l', '***'\\)\\)\")"
+    ]
+  }
+}

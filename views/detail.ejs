@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= medicine.name %> — RGM Davao</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="main-content detail-page">
+    <div class="back-bar">
+      <a href="/davao" class="back-link">← Back to all medicines</a>
+    </div>
+
+    <div class="detail-card">
+      <div class="detail-header">
+        <div>
+          <span class="cat-badge cat-badge-lg cat-<%= medicine.category.replace(/[\s\/]+/g, '-').toLowerCase() %>">
+            <%= medicine.category %>
+          </span>
+          <% if (medicine.form) { %>
+            <span class="form-badge"><%= medicine.form %></span>
+          <% } %>
+        </div>
+        <div class="detail-actions">
+          <a href="/davao/medicine/<%= medicine._id %>/edit" class="btn btn-secondary">Edit</a>
+          <a href="/davao/medicine/<%= medicine._id %>/delete" class="btn btn-danger">Delete</a>
+        </div>
+      </div>
+
+      <div class="detail-title-block">
+        <h1 class="detail-name"><%= medicine.name %></h1>
+        <% if (medicine.brand_name) { %>
+          <p class="detail-brand">(<%= medicine.brand_name %>)</p>
+        <% } %>
+      </div>
+
+      <div class="detail-sections">
+        <div class="detail-section">
+          <h4 class="section-label">For</h4>
+          <p class="section-value"><%= medicine.indication %></p>
+        </div>
+
+        <% if (medicine.dosage && medicine.dosage.length > 0) { %>
+          <div class="detail-section">
+            <h4 class="section-label">Dosage</h4>
+            <table class="dosage-table">
+              <thead>
+                <tr><th>Age / Group</th><th>Dose</th></tr>
+              </thead>
+              <tbody>
+                <% medicine.dosage.forEach(function(d) { %>
+                  <tr>
+                    <td><%= d.age_range || '—' %></td>
+                    <td><strong><%= d.dose %></strong></td>
+                  </tr>
+                <% }) %>
+              </tbody>
+            </table>
+          </div>
+        <% } %>
+
+        <% if (medicine.frequency) { %>
+          <div class="detail-section">
+            <h4 class="section-label">Frequency</h4>
+            <p class="section-value freq-value"><%= medicine.frequency %></p>
+          </div>
+        <% } %>
+
+        <% if (medicine.precautions && medicine.precautions.length > 0) { %>
+          <div class="detail-section">
+            <h4 class="section-label">Precautions</h4>
+            <ul class="precaution-list">
+              <% medicine.precautions.forEach(function(p) { %>
+                <li><span class="warn-icon">⚠</span> <%= p %></li>
+              <% }) %>
+            </ul>
+          </div>
+        <% } %>
+
+        <% if (medicine.notes) { %>
+          <div class="detail-section">
+            <h4 class="section-label">Notes</h4>
+            <p class="section-value notes-value"><%= medicine.notes %></p>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>RGM Davao Pharmacy Reference &mdash; For internal use only.</p>
+  </footer>
+</body>
+</html>

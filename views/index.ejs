@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGM Davao — Medicine Reference</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Davao Pharmacy.<br><span class="accent">Real Reference.</span></h1>
+      <p>Quick lookup for medicines, dosages, and precautions — all in one place.</p>
+    </div>
+
+    <form action="/davao" method="GET" class="search-form" id="searchForm">
+      <div class="search-row">
+        <input
+          type="text"
+          name="q"
+          id="searchInput"
+          placeholder="Search by name, brand, or indication..."
+          value="<%= searchQuery || '' %>"
+          class="search-input"
+          autocomplete="off"
+        >
+        <button type="submit" class="btn btn-primary">Search</button>
+        <% if (searchQuery || category) { %>
+          <a href="/davao" class="btn btn-ghost">Clear</a>
+        <% } %>
+      </div>
+
+      <div class="filter-row">
+        <span class="filter-label">Filter:</span>
+        <% categories.forEach(function(cat) { %>
+          <label class="cat-chip <%= category === cat ? 'active' : '' %>">
+            <input type="radio" name="category" value="<%= cat %>" onchange="this.form.submit()" <%= category === cat ? 'checked' : '' %> style="display:none">
+            <%= cat %>
+          </label>
+        <% }) %>
+        <% if (category) { %>
+          <a href="/davao?q=<%= searchQuery %>" class="cat-chip cat-chip-clear">✕ Clear filter</a>
+        <% } %>
+      </div>
+    </form>
+  </div>
+
+  <div class="main-content">
+    <div class="results-header">
+      <div>
+        <h2 class="section-heading">
+          <% if (searchQuery || category) { %>Browse Results<% } else { %>All Medicines<% } %>
+        </h2>
+        <span class="results-count">
+          <% if (searchQuery || category) { %>
+            <%= medicines.length %> result<%= medicines.length !== 1 ? 's' : '' %>
+            <% if (searchQuery) { %> for &ldquo;<strong><%= searchQuery %></strong>&rdquo;<% } %>
+            <% if (category) { %> in <strong><%= category %></strong><% } %>
+          <% } else { %>
+            Showing all <strong><%= total %></strong> medicines
+          <% } %>
+        </span>
+      </div>
+      <a href="/davao/add" class="btn btn-primary btn-sm">+ Add Medicine</a>
+    </div>
+
+    <% if (medicines.length === 0) { %>
+      <div class="empty-state">
+        <div class="empty-icon">🔍</div>
+        <h3>No medicines found</h3>
+        <p>Try a different search term or <a href="/davao">view all medicines</a>.</p>
+      </div>
+    <% } else { %>
+      <div class="medicine-grid">
+        <% medicines.forEach(function(med) { %>
+          <a href="/davao/medicine/<%= med._id %>" class="medicine-card" data-category="<%= med.category %>">
+            <div class="card-header">
+              <span class="card-category cat-badge cat-<%= med.category.replace(/[\s\/]+/g, '-').toLowerCase() %>"><%= med.category %></span>
+              <span class="card-form"><%= med.form || '' %></span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-name"><%= med.name %></h3>
+              <% if (med.brand_name) { %>
+                <p class="card-brand">(<%= med.brand_name %>)</p>
+              <% } %>
+              <p class="card-indication"><%= med.indication %></p>
+            </div>
+            <div class="card-footer">
+              <span class="card-freq"><%= med.frequency ? med.frequency.substring(0, 55) + (med.frequency.length > 55 ? '…' : '') : '' %></span>
+              <span class="card-arrow">→</span>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+    <% } %>
+  </div>
+
+  <footer class="footer">
+    RGM Davao Pharmacy Reference &mdash; For internal use only.
+  </footer>
+
+  <script>
+    let debounceTimer;
+    document.getElementById('searchInput').addEventListener('input', function() {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        document.getElementById('searchForm').submit();
+      }, 400);
+    });
+  </script>
+</body>
+</html>

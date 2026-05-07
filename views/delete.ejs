@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Medicine — RGM Davao</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="main-content form-page">
+    <div class="back-bar">
+      <a href="/davao/medicine/<%= medicine._id %>" class="back-link">← Back to details</a>
+    </div>
+
+    <div class="form-card delete-card">
+      <div class="delete-icon">🗑</div>
+      <h2 class="form-title">Delete Medicine</h2>
+      <p class="delete-msg">Are you sure you want to delete <strong><%= medicine.name %></strong>
+        <% if (medicine.brand_name) { %>(<%= medicine.brand_name %>)<% } %>?
+        This cannot be undone.
+      </p>
+
+      <div class="delete-preview">
+        <span class="cat-badge cat-<%= medicine.category.replace(/[\s\/]+/g, '-').toLowerCase() %>"><%= medicine.category %></span>
+        <span><%= medicine.indication %></span>
+      </div>
+
+      <form action="/davao/medicine/<%= medicine._id %>/delete" method="POST">
+        <div class="form-actions centered">
+          <a href="/davao/medicine/<%= medicine._id %>" class="btn btn-ghost">Cancel</a>
+          <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>RGM Davao Pharmacy Reference &mdash; For internal use only.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Medicine — RGM Davao</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="main-content form-page">
+    <div class="back-bar">
+      <a href="/davao" class="back-link">← Back to all medicines</a>
+    </div>
+
+    <div class="form-card">
+      <h2 class="form-title">Add New Medicine</h2>
+
+      <% if (errors && errors.length > 0) { %>
+        <div class="error-box">
+          <% errors.forEach(function(e) { %><p>⚠ <%= e %></p><% }) %>
+        </div>
+      <% } %>
+
+      <form action="/davao/add" method="POST" id="medicineForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Medicine Name <span class="req">*</span></label>
+            <input type="text" name="name" id="name" value="<%= medicine.name || '' %>" placeholder="e.g. Syrup Paracetamol" required>
+          </div>
+
+          <div class="form-group">
+            <label for="brand_name">Brand Name</label>
+            <input type="text" name="brand_name" id="brand_name" value="<%= medicine.brand_name || '' %>" placeholder="e.g. KIDICEF / Hyfer-125">
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category <span class="req">*</span></label>
+            <select name="category" id="category" required>
+              <option value="">— Select category —</option>
+              <% categories.forEach(function(cat) { %>
+                <option value="<%= cat %>" <%= medicine.category === cat ? 'selected' : '' %>><%= cat %></option>
+              <% }) %>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="form">Form</label>
+            <input type="text" name="form" id="form" value="<%= medicine.form || '' %>" placeholder="e.g. Syrup, Tablet, Capsule, Drops">
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="indication">Indication (What it's for) <span class="req">*</span></label>
+            <input type="text" name="indication" id="indication" value="<%= medicine.indication || '' %>" placeholder="e.g. Fever, Pain" required>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="frequency">Frequency</label>
+            <input type="text" name="frequency" id="frequency" value="<%= medicine.frequency || '' %>" placeholder="e.g. Every 8 hrs with food for 3 days">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Dosage by Age / Group</label>
+          <div id="dosageRows">
+            <% if (medicine.dosage && medicine.dosage.length > 0) { %>
+              <% medicine.dosage.forEach(function(d) { %>
+                <div class="dosage-row">
+                  <input type="text" name="age_range" placeholder="Age / Group (e.g. 2yo - 6yo)" value="<%= d.age_range %>">
+                  <input type="text" name="dose" placeholder="Dose (e.g. 5 ml)" value="<%= d.dose %>">
+                  <button type="button" class="btn-icon remove-row" onclick="removeRow(this)">✕</button>
+                </div>
+              <% }) %>
+            <% } else { %>
+              <div class="dosage-row">
+                <input type="text" name="age_range" placeholder="Age / Group (e.g. 2yo - 6yo)">
+                <input type="text" name="dose" placeholder="Dose (e.g. 5 ml)">
+                <button type="button" class="btn-icon remove-row" onclick="removeRow(this)">✕</button>
+              </div>
+            <% } %>
+          </div>
+          <button type="button" class="btn btn-ghost btn-sm" onclick="addDosageRow()">+ Add Row</button>
+        </div>
+
+        <div class="form-group">
+          <label>Precautions</label>
+          <div id="precautionRows">
+            <% if (medicine.precautions && medicine.precautions.length > 0) { %>
+              <% medicine.precautions.forEach(function(p) { %>
+                <div class="precaution-row">
+                  <input type="text" name="precautions" value="<%= p %>" placeholder="e.g. NOT for pregnant/breastfeeding">
+                  <button type="button" class="btn-icon remove-row" onclick="removeRow(this)">✕</button>
+                </div>
+              <% }) %>
+            <% } else { %>
+              <div class="precaution-row">
+                <input type="text" name="precautions" placeholder="e.g. NOT for pregnant/breastfeeding">
+                <button type="button" class="btn-icon remove-row" onclick="removeRow(this)">✕</button>
+              </div>
+            <% } %>
+          </div>
+          <button type="button" class="btn btn-ghost btn-sm" onclick="addPrecautionRow()">+ Add Precaution</button>
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Notes</label>
+          <textarea name="notes" id="notes" rows="3" placeholder="Any additional notes, contraindications, or instructions..."><%= medicine.notes || '' %></textarea>
+        </div>
+
+        <div class="form-actions">
+          <a href="/davao" class="btn btn-ghost">Cancel</a>
+          <button type="submit" class="btn btn-primary">Save Medicine</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>RGM Davao Pharmacy Reference &mdash; For internal use only.</p>
+  </footer>
+
+  <script>
+    function addDosageRow() {
+      const row = document.createElement('div');
+      row.className = 'dosage-row';
+      row.innerHTML = `<input type="text" name="age_range" placeholder="Age / Group (e.g. 2yo - 6yo)"><input type="text" name="dose" placeholder="Dose (e.g. 5 ml)"><button type="button" class="btn-icon remove-row" onclick="removeRow(this)">✕</button>`;
+      document.getElementById('dosageRows').appendChild(row);
+    }
+    function addPrecautionRow() {
+      const row = document.createElement('div');
+      row.className = 'precaution-row';
+      row.innerHTML = `<input type="text" name="precautions" placeholder="e.g. NOT for pregnant/breastfeeding"><button type="button" class="btn-icon remove-row" onclick="removeRow(this)">✕</button>`;
+      document.getElementById('precautionRows').appendChild(row);
+    }
+    function removeRow(btn) {
+      btn.closest('div').remove();
+    }
+  </script>
+</body>
+</html>
