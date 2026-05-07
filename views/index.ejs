@@ -77,7 +77,7 @@
         <% medicines.forEach(function(med) { %>
           <a href="/davao/medicine/<%= med._id %>" class="medicine-card" data-category="<%= med.category %>">
             <div class="card-header">
-              <span class="card-category cat-badge cat-<%= med.category.replace(/[\s\/]+/g, '-').toLowerCase() %>"><%= med.category %></span>
+              <span class="card-category cat-badge cat-<%= med.category.replace(/[\s\/&]+/g, '-').toLowerCase() %>"><%= med.category %></span>
               <span class="card-form"><%= med.form || '' %></span>
             </div>
             <div class="card-body">

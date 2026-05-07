@@ -26,16 +26,20 @@
   --shadow-md:   0 4px 16px rgba(100,30,70,.10), 0 12px 40px rgba(100,30,70,.13);
 
   /* Category colours */
-  --cat-anti:       #3b82f6;
-  --cat-nose:       #06b6d4;
-  --cat-cough:      #8b5cf6;
-  --cat-nausea:     #f59e0b;
-  --cat-diarr:      #ec4899;
-  --cat-gastric:    #10b981;
-  --cat-stomach:    #14b8a6;
-  --cat-antibiotic: #ef4444;
-  --cat-fungal:     #f97316;
-  --cat-rash:       #a855f7;
+  --cat-fever-pain:    #ef4444;
+  --cat-stuffy-nose:   #06b6d4;
+  --cat-cough:         #8b5cf6;
+  --cat-pain:          #f43f5e;
+  --cat-nausea:        #d97706;
+  --cat-diarrhoea:     #f97316;
+  --cat-gastric:       #10b981;
+  --cat-stomach:       #14b8a6;
+  --cat-antibiotic:    #dc2626;
+  --cat-allergy:       #0ea5e9;
+  --cat-rash:          #ec4899;
+  --cat-skin:          #22c55e;
+  --cat-ear-eye:       #3b82f6;
+  --cat-herbal:        #65a30d;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -338,16 +342,20 @@ a.cat-chip { text-decoration: none; }
 }
 .cat-badge-lg { font-size: 0.78rem; padding: 5px 14px; }
 
-.cat-anti-inflammatory        { background: var(--cat-anti); }
-.cat-stuffy-nose              { background: var(--cat-nose); }
-.cat-cough-pain               { background: var(--cat-cough); }
-.cat-nausea-vomiting          { background: var(--cat-nausea); color: #7c3300; }
-.cat-diarrhoea-vomiting       { background: var(--cat-diarr); }
-.cat-gastric-issues           { background: var(--cat-gastric); }
-.cat-stomach-pain             { background: var(--cat-stomach); }
-.cat-antibiotics              { background: var(--cat-antibiotic); }
-.cat-antifungal-antibacterial { background: var(--cat-fungal); }
-.cat-rash-asthma-allergy      { background: var(--cat-rash); }
+.cat-fever-pain       { background: var(--cat-fever-pain); }
+.cat-stuffy-nose      { background: var(--cat-stuffy-nose); }
+.cat-cough            { background: var(--cat-cough); }
+.cat-pain             { background: var(--cat-pain); }
+.cat-nausea-vomiting  { background: var(--cat-nausea); }
+.cat-diarrhoea        { background: var(--cat-diarrhoea); }
+.cat-gastric-issues   { background: var(--cat-gastric); }
+.cat-stomach-pain     { background: var(--cat-stomach); }
+.cat-antibiotics      { background: var(--cat-antibiotic); }
+.cat-allergy-asthma   { background: var(--cat-allergy); }
+.cat-rash             { background: var(--cat-rash); }
+.cat-skin-wound-care  { background: var(--cat-skin); }
+.cat-ear-eye          { background: var(--cat-ear-eye); }
+.cat-herbal           { background: var(--cat-herbal); }
 
 /* ======================== EMPTY STATE ======================== */
 .empty-state {

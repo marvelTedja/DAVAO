@@ -2,7 +2,7 @@
   {
     "name": "Syrup Paracetamol",
     "brand_name": "KIDICEF / Hyfer-125",
-    "category": "Anti-inflammatory",
+    "category": "Fever & Pain",
     "form": "Syrup",
     "indication": "Fever, Pain",
     "dosage": [
@@ -21,7 +21,7 @@
   {
     "name": "Tablet Paracetamol",
     "brand_name": "Parasaph",
-    "category": "Anti-inflammatory",
+    "category": "Fever & Pain",
     "form": "Tablet",
     "indication": "Fever, Pain",
     "dosage": [
@@ -79,7 +79,7 @@
   {
     "name": "Carbocisteine Capsule",
     "brand_name": "Marluxyn",
-    "category": "Cough / Pain",
+    "category": "Cough",
     "form": "Capsule",
     "indication": "Chesty cough",
     "dosage": [
@@ -92,7 +92,7 @@
   {
     "name": "Carbocisteine Syrup",
     "brand_name": "Ceasol",
-    "category": "Cough / Pain",
+    "category": "Cough",
     "form": "Syrup",
     "indication": "Chesty cough",
     "dosage": [
@@ -106,7 +106,7 @@
   {
     "name": "Mefenamic Acid",
     "brand_name": "Myrefen",
-    "category": "Cough / Pain",
+    "category": "Pain",
     "form": "Capsule",
     "indication": "Pain, Heavy menstrual bleeding",
     "dosage": [
@@ -119,7 +119,7 @@
   {
     "name": "Diclofenac",
     "brand_name": "Trifocid",
-    "category": "Cough / Pain",
+    "category": "Pain",
     "form": "Tablet",
     "indication": "Pain",
     "dosage": [
@@ -132,7 +132,7 @@
   {
     "name": "Dimenhydrinate",
     "brand_name": "Novomin",
-    "category": "Nausea / Vomiting",
+    "category": "Nausea & Vomiting",
     "form": "Tablet",
     "indication": "Vomiting and Giddiness",
     "dosage": [
@@ -147,7 +147,7 @@
   {
     "name": "Metoclopramide",
     "brand_name": "Sunward",
-    "category": "Nausea / Vomiting",
+    "category": "Nausea & Vomiting",
     "form": "Tablet",
     "indication": "Nausea and Vomiting",
     "dosage": [
@@ -160,7 +160,7 @@
   {
     "name": "Loperamide",
     "brand_name": "Motrex",
-    "category": "Diarrhoea / Vomiting",
+    "category": "Diarrhoea",
     "form": "Capsule",
     "indication": "Diarrhoea (Antidiarrhoeal)",
     "dosage": [
@@ -173,7 +173,7 @@
   {
     "name": "ORS (Oral Rehydration Salts)",
     "brand_name": "Sodium Chloride + Potassium Chloride + Trisodium Citrate + Glucose Anhydrous",
-    "category": "Diarrhoea / Vomiting",
+    "category": "Diarrhoea",
     "form": "Sachet / Powder",
     "indication": "Vomiting and Diarrhoea — rehydration",
     "dosage": [
@@ -326,7 +326,7 @@
   {
     "name": "Chloramphenicol Eye Ointment",
     "brand_name": "Kloroxan (CMC)",
-    "category": "Antifungal / Antibacterial",
+    "category": "Ear & Eye",
     "form": "Eye Ointment",
     "indication": "Eye bacteria, Abrasion on skin",
     "dosage": [
@@ -339,7 +339,7 @@
   {
     "name": "Clotrimazole Skin Cream",
     "brand_name": "Candasole",
-    "category": "Antifungal / Antibacterial",
+    "category": "Skin & Wound Care",
     "form": "Cream",
     "indication": "Fungal skin infection",
     "dosage": [
@@ -352,7 +352,7 @@
   {
     "name": "Fucidic Acid",
     "brand_name": "Germacid",
-    "category": "Antifungal / Antibacterial",
+    "category": "Skin & Wound Care",
     "form": "Cream",
     "indication": "Bacterial skin infection",
     "dosage": [
@@ -365,7 +365,7 @@
   {
     "name": "Blumea Balsamifera (Sambong Leaf)",
     "brand_name": "Unsam",
-    "category": "Antifungal / Antibacterial",
+    "category": "Herbal",
     "form": "Tablet",
     "indication": "Leg swelling, Kidney stone",
     "dosage": [
@@ -378,7 +378,7 @@
   {
     "name": "Clotrimazole Ear Drops",
     "brand_name": "Candid",
-    "category": "Antifungal / Antibacterial",
+    "category": "Ear & Eye",
     "form": "Ear Drops",
     "indication": "Fungal ear infection",
     "dosage": [
@@ -391,7 +391,7 @@
   {
     "name": "Ofloxacin Ear Drops",
     "brand_name": "Torimd",
-    "category": "Antifungal / Antibacterial",
+    "category": "Ear & Eye",
     "form": "Ear Drops",
     "indication": "Bacterial ear infection",
     "dosage": [
@@ -405,7 +405,7 @@
   {
     "name": "Ciprofloxacin Ear Drop 0.3%",
     "brand_name": "Celsus",
-    "category": "Antifungal / Antibacterial",
+    "category": "Ear & Eye",
     "form": "Ear Drops",
     "indication": "Bacterial ear infection",
     "dosage": [
@@ -418,7 +418,7 @@
   {
     "name": "Cetirizine",
     "brand_name": "Zetrinx",
-    "category": "Rash / Asthma / Allergy",
+    "category": "Allergy & Asthma",
     "form": "Tablet",
     "indication": "Allergy",
     "dosage": [
@@ -432,7 +432,7 @@
   {
     "name": "Prednisolone",
     "brand_name": "Prednisyn",
-    "category": "Rash / Asthma / Allergy",
+    "category": "Allergy & Asthma",
     "form": "Tablet",
     "indication": "Allergy",
     "dosage": [
@@ -446,7 +446,7 @@
   {
     "name": "Zinc Oxide + Calamine Ointment",
     "brand_name": "Calmoseptine / Dermoplex",
-    "category": "Rash / Asthma / Allergy",
+    "category": "Rash",
     "form": "Ointment / Cream",
     "indication": "Rash",
     "dosage": [
@@ -459,7 +459,7 @@
   {
     "name": "Salbutamol",
     "brand_name": "Asmin",
-    "category": "Rash / Asthma / Allergy",
+    "category": "Allergy & Asthma",
     "form": "Tablet",
     "indication": "Asthma",
     "dosage": [
@@ -474,7 +474,7 @@
   {
     "name": "Diphenhydramine Capsule",
     "brand_name": "Histazyn Rx",
-    "category": "Rash / Asthma / Allergy",
+    "category": "Allergy & Asthma",
     "form": "Capsule",
     "indication": "Allergy, Cough, Motion sickness, Insomnia",
     "dosage": [
@@ -487,7 +487,7 @@
   {
     "name": "Syrup Diphenhydramine",
     "brand_name": "Benadryl",
-    "category": "Rash / Asthma / Allergy",
+    "category": "Allergy & Asthma",
     "form": "Syrup",
     "indication": "Allergic coughs",
     "dosage": [

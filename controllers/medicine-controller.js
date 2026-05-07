@@ -1,16 +1,20 @@
 const Medicine = require("../models/medicine-model");
 
 const CATEGORIES = [
-  "Anti-inflammatory",
+  "Fever & Pain",
   "Stuffy Nose",
-  "Cough / Pain",
-  "Nausea / Vomiting",
-  "Diarrhoea / Vomiting",
+  "Cough",
+  "Pain",
+  "Nausea & Vomiting",
+  "Diarrhoea",
   "Gastric Issues",
   "Stomach Pain",
   "Antibiotics",
-  "Antifungal / Antibacterial",
-  "Rash / Asthma / Allergy"
+  "Allergy & Asthma",
+  "Rash",
+  "Skin & Wound Care",
+  "Ear & Eye",
+  "Herbal"
 ];
 
 exports.CATEGORIES = CATEGORIES;

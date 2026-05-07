@@ -17,7 +17,7 @@
     <div class="detail-card">
       <div class="detail-header">
         <div>
-          <span class="cat-badge cat-badge-lg cat-<%= medicine.category.replace(/[\s\/]+/g, '-').toLowerCase() %>">
+          <span class="cat-badge cat-badge-lg cat-<%= medicine.category.replace(/[\s\/&]+/g, '-').toLowerCase() %>">
             <%= medicine.category %>
           </span>
           <% if (medicine.form) { %>
